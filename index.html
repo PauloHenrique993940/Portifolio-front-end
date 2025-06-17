@@ -9,23 +9,24 @@
     <link rel="stylesheet" href="./src/styles/dark-theme.css" disabled id="theme-link">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <aside class="sidebar">
-            <div class="profile-card">
-                <img src="./src/images/perfil/paulo.jpeg" alt="Foto de Perfil" class="profile-pic">
+            <div class="profile-card" data-aos="fade-right"> <img src="./src/images/perfil/paulo.jpeg" alt="Foto de Perfil" class="profile-pic">
                 <h3>Paulo Henrique F França</h3>
                 <p>Desenvolvedor Web | Front-End</p>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/paulohenriquefranca/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/PauloHenrique993940?tab=repositories" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/paulohenriquefranca/" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/PauloHenrique993940?tab=repositories" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
                     <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-            <nav class="main-nav">
-                <ul>
+            <nav class="main-nav" data-aos="fade-right" data-aos-delay="200"> <ul>
                     <li><a href="#home"><i class="fas fa-home"></i> Início</a></li>
                     <li><a href="#sobre"><i class="fas fa-user"></i> Sobre Mim</a></li>
                     <li><a href="#projetos"><i class="fas fa-project-diagram"></i> Projetos</a></li>
@@ -33,7 +34,7 @@
                     <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
                 </ul>
             </nav>
-            <div class="theme-switcher">
+            <div class="theme-switcher" data-aos="fade-right" data-aos-delay="400">
                 <button id="theme-toggle" class="btn secondary-btn">
                     <i class="fas fa-moon"></i> Mudar Tema
                 </button>
@@ -42,48 +43,48 @@
 
         <main class="content">
             <div class="fog"></div>
-            <section id="home" class="hero-section">
-                <div class="hero-content">
-                    <h1 class="suspense-title">Olá, eu sou <span class="highlight">Paulo Henrique</span>.</h1>
-                    <p class="lead-text suspense-text">
+            <section id="home" class="hero-section" data-aos="fade-up"> <div class="hero-content">
+                    <h1 class="suspense-title" data-aos="fade-up" data-aos-delay="200">Olá, eu sou <span class="highlight">Paulo Henrique</span>.</h1>
+                    <p class="lead-text suspense-text" data-aos="fade-up" data-aos-delay="400">
                         Algo está se formando... <br>
                         Ideias ganham vida diante dos seus olhos. <br>
                         O que você está prestes a ver pode te surpreender. <br>
                         Prepare-se para experienciar o inesperado.
                     </p>
-                    <a href="#projetos" class="btn primary-btn">Meus Projetos <i class="fas fa-arrow-right"></i></a>
-                    <a href="#contato" class="btn secondary-btn">Vamos Conversar <i class="fas fa-comments"></i></a>
+                    <div data-aos="fade-up" data-aos-delay="600"> <a href="#projetos" class="btn primary-btn">Meus Projetos <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contato" class="btn secondary-btn">Vamos Conversar <i class="fas fa-comments"></i></a>
+                    </div>
                 </div>
             </section>
 
-            <section id="sobre" class="about-section">
-                <h2>Sobre Mim</h2>
-                <p>Com paixão por **desenvolvimento web** e um olhar atento para o **design**, construo interfaces de
+            <section id="sobre" class="about-section" data-aos="fade-up">
+                <h2 data-aos="fade-right">Sobre Mim</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Com paixão por **desenvolvimento web** e um olhar atento para o **design**, construo interfaces de
                     usuário que não são apenas bonitas, mas também **intuitivas** e **otimizadas** para a melhor
                     experiência. Minha jornada no front-end é impulsionada pela busca constante por novas tecnologias e
                     pela vontade de resolver desafios complexos com soluções **elegantes** e **eficientes**.</p>
-                <p>Sou um eterno aprendiz, sempre aprimorando minhas habilidades e explorando as últimas tendências para
+                <p data-aos="fade-up" data-aos-delay="200">Sou um eterno aprendiz, sempre aprimorando minhas habilidades e explorando as últimas tendências para
                     entregar resultados que superem as expectativas.</p>
             </section>
-            <section id="formacao" class="about-section">
-                <h2>Formação</h2>
-                <p>Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong>, com especialização em
+            
+            <section id="formacao" class="about-section" data-aos="fade-up">
+                <h2 data-aos="fade-right">Formação</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong>, com especialização em
                     <strong>Engenharia Front-End</strong> pela EBAC e formação em <strong>Desenvolvimento Full
                         Stack</strong> pela Infinity School.
                 </p>
-                <p>Minha trajetória é marcada por uma sólida base teórica e prática, focada na criação de aplicações
+                <p data-aos="fade-up" data-aos-delay="200">Minha trajetória é marcada por uma sólida base teórica e prática, focada na criação de aplicações
                     <strong>modernas</strong>, <strong>responsivas</strong> e <strong>eficientes</strong>, sempre
                     priorizando a experiência do usuário.
                 </p>
-                <p>Atualmente sigo em constante evolução, acompanhando as últimas tendências e tecnologias para entregar
+                <p data-aos="fade-up" data-aos-delay="300">Atualmente sigo em constante evolução, acompanhando as últimas tendências e tecnologias para entregar
                     soluções cada vez mais <strong>inovadoras</strong> e <strong>de alto impacto</strong>.</p>
             </section>
 
             <section id="projetos" class="projects-section">
-                <h2>Projetos Destaques</h2>
+                <h2 data-aos="fade-right">Projetos Destaques</h2>
                 <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="./src/images/projects/eplay.png" alt="Projeto 1 Thumbnail">
+                    <div class="project-card" data-aos="zoom-in-up"> <img src="./src/images/projects/eplay.png" alt="Projeto 1 Thumbnail">
                         <h3>Eplay: E-commerce Moderno</h3>
                         <p>Desenvolvimento de um e-commerce responsivo com foco em experiência do usuário e alta
                             performance, utilizando React e Styled Components tipagem com Typescript e integraçãocom
@@ -96,7 +97,7 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card" data-aos="zoom-in-up" data-aos-delay="200">
                         <img src="./src/images/projects/disney.png" alt="Projeto 2 Thumbnail">
                         <h3>Disney+</h3>
                         <p>Criação de um dashboard administrativo com visualizações de dados dinâmicas e integração de
@@ -109,62 +110,66 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/400x250/ffc107/000000?text=Projeto+3"
-                            alt="Projeto 3 Thumbnail">
-                        <h3>Projeto C: Landing Page Animada</h3>
-                        <p>Design e implementação de uma landing page atraente com animações CSS e JavaScript para
-                            engajamento do usuário.</p>
+                    <div class="project-card" data-aos="zoom-in-up" data-aos-delay="400">
+                        <img src="./src/images/projects/Captura de tela 2025-05-13 092908.png" alt="Projeto 3 Thumbnail">
+                        <h3>Efood: E-commerce e derivery</h3>
+                        <p>
+                            Este projeto é uma aplicação de e-commerce e delivery construída com React e React Router
+                            para navegação.
+                            Utiliza Redux para gerenciamento de estado e TypeScript para robustez. O sistema consome
+                            APIs para simulação de pedidos,
+                            oferecendo uma experiência de compra e entrega dinâmica.
+                        </p>
                         <div class="project-links">
-                            <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-eye"></i> Ver Projeto</a>
-                            <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> Código</a>
+                            <a href="https://efood-seven-azure.vercel.app/" target="_blank" class="btn small-btn"><i class="fas fa-eye"></i> Ver Projeto</a>
+                            <a href="https://github.com/PauloHenrique993940/efood.git" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> Código</a>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section id="tecnologias" class="skills-section">
-                <h2>Minhas Habilidades e Tecnologias</h2>
+                <h2 data-aos="fade-right">Minhas Habilidades e Tecnologias</h2>
                 <div class="skills-grid">
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="50">
                         <i class="fab fa-html5"></i>
                         <span>HTML5</span>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
                         <i class="fab fa-css3-alt"></i>
                         <span>CSS3</span>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="150">
                         <i class="fab fa-js-square"></i>
                         <span>JavaScript (ES6+)</span>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
                         <i class="fab fa-react"></i>
                         <span>React.js</span>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="250">
                         <i class="fab fa-vuejs"></i>
                         <span>Vue.js</span>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
                         <i class="fab fa-node-js"></i>
                         <span>Node.js (Básico)</span>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="350">
                         <i class="fab fa-git-alt"></i>
                         <span>Git & GitHub</span>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
                         <i class="fas fa-paint-brush"></i>
                         <span>Figma/UX/UI</span>
                     </div>
                 </div>
             </section>
 
-            <section id="contato" class="contact-section">
-                <h2>Entre em Contato</h2>
-                <p>Interessado em colaborar em um projeto? Ou apenas quer trocar uma ideia? Adoraria ouvir de você!</p>
-                <form id="contactForm" class="contact-form">
+            <section id="contato" class="contact-section" data-aos="fade-up">
+                <h2 data-aos="fade-right">Entre em Contato</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Interessado em colaborar em um projeto? Ou apenas quer trocar uma ideia? Adoraria ouvir de você!</p>
+                <form id="contactForm" class="contact-form" data-aos="fade-up" data-aos-delay="200">
                     <div class="form-group">
                         <label for="name">Seu Nome:</label>
                         <input type="text" id="name" name="name" placeholder="Nome Completo" required>
@@ -178,7 +183,7 @@
                     <div class="form-group">
                         <label for="message">Sua Mensagem:</label>
                         <textarea id="message" name="message" rows="6" placeholder="Sua Mensagem..."
-                            required></textarea>
+                                required></textarea>
                     </div>
 
                     <button type="submit" class="btn primary-btn send-btn">
@@ -186,14 +191,14 @@
                     </button>
                 </form>
 
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="400">
                     <p><i class="fas fa-phone"></i> (71) 99954-1008</p>
                     <p><i class="fas fa-envelope"></i>paulohenriqueferreirafranca2@gmail.com</p>
                     <p><i class="fas fa-map-marker-alt"></i> Salvador, Bahia</p>
                 </div>
             </section>
 
-            <footer class="site-footer">
+            <footer class="site-footer" data-aos="fade-up">
                 <p>&copy; 2025 Paulo Henrique. Todos os direitos reservados.</p>
                 <div class="footer-links">
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -204,6 +209,14 @@
         </main>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Duração padrão da animação em milissegundos
+            easing: 'ease-in-out', // Tipo de easing
+            once: true, // A animação acontece apenas uma vez ao rolar para o elemento
+        });
+    </script>
 </body>
 
 <script src="./src/script/main.js"></script>
