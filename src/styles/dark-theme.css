@@ -1,0 +1,105 @@
+/* Variáveis para o tema escuro */
+:root {
+    --bg-color-dark: #1a1a2e; /* Fundo principal escuro */
+    --sidebar-bg-dark: #16213e; /* Fundo da barra lateral escuro */
+    --text-color-dark: #e0e0e0; /* Cor do texto claro */
+    --heading-color-dark: #e94560; /* Cor dos títulos diferente */
+    --link-hover-dark: #0f3460; /* Cor do link ao passar o mouse */
+    --button-primary-bg-dark: #e94560; /* Cor de fundo do botão primário */
+    --button-primary-text-dark: #ffffff; /* Cor do texto do botão primário */
+    --button-secondary-bg-dark: #0f3460; /* Cor de fundo do botão secundário */
+    --button-secondary-text-dark: #e0e0e0; /* Cor do texto do botão secundário */
+    --card-bg-dark: #262c4a; /* Fundo de cards/seções escuro */
+    --border-color-dark: #0f3460; /* Cor da borda */
+}
+
+/* Aplicar estilos do tema escuro */
+body.dark-theme {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .sidebar {
+    background-color: var(--sidebar-bg-dark);
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3 {
+    color: var(--heading-color-dark);
+}
+
+body.dark-theme .highlight {
+    color: var(--heading-color-dark); /* Manter a cor de destaque no tema escuro */
+}
+
+body.dark-theme .main-nav ul li a {
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .main-nav ul li a:hover {
+    background-color: var(--link-hover-dark);
+    color: var(--heading-color-dark);
+}
+
+body.dark-theme .btn.primary-btn {
+    background-color: var(--button-primary-bg-dark);
+    color: var(--button-primary-text-dark);
+    border-color: var(--button-primary-bg-dark);
+}
+
+body.dark-theme .btn.primary-btn:hover {
+    background-color: darken(var(--button-primary-bg-dark), 10%); /* Exemplo de escurecimento */
+}
+
+body.dark-theme .btn.secondary-btn {
+    background-color: var(--button-secondary-bg-dark);
+    color: var(--button-secondary-text-dark);
+    border-color: var(--button-secondary-bg-dark);
+}
+
+body.dark-theme .btn.secondary-btn:hover {
+    background-color: darken(var(--button-secondary-bg-dark), 10%); /* Exemplo de escurecimento */
+}
+
+body.dark-theme .project-card,
+body.dark-theme .skill-item,
+body.dark-theme .contact-form,
+body.dark-theme .contact-info {
+    background-color: var(--card-bg-dark);
+    border-color: var(--border-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .contact-form input,
+body.dark-theme .contact-form textarea {
+    background-color: var(--sidebar-bg-dark);
+    color: var(--text-color-dark);
+    border-color: var(--border-color-dark);
+}
+
+body.dark-theme .contact-form input::placeholder,
+body.dark-theme .contact-form textarea::placeholder {
+    color: #a0a0a0;
+}
+
+body.dark-theme .site-footer {
+    background-color: var(--sidebar-bg-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .social-links a,
+body.dark-theme .footer-links a {
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .social-links a:hover,
+body.dark-theme .footer-links a:hover {
+    color: var(--heading-color-dark);
+}
+
+/* Estilos específicos para o botão de tema */
+body.dark-theme .theme-switcher #theme-toggle {
+    background-color: var(--button-primary-bg-dark);
+    color: var(--button-primary-text-dark);
+}
