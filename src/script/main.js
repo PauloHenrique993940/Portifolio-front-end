@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ... (código existente para nav links e smooth scrolling) ...
 
     // Adiciona classe 'active' à navegação baseada na seção visível
     const sections = document.querySelectorAll('main section');
@@ -44,39 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function typeWriterHeadline() {
         if (headlineIndex < originalHeadlineText.length) {
-            // Verifica se o caractere atual é parte do nome "Paulo Henrique" para aplicar o estilo
-            // Isso é uma abordagem mais complexa se você quiser manter a tag dentro da digitação
-            // A solução mais simples é: digitar todo o texto e depois aplicar o estilo no nome.
-            // Para manter a tag highlight funcionando corretamente, o ideal é que a tag já esteja no HTML
-            // e o JS revele o texto.
 
-            // Solução mais simples e que resolve o problema:
-            // Removemos a animação de digitação do H1 que contém o SPAN.
-            // A animação de digitação ficará apenas para o parágrafo abaixo.
-
-            // Se você quer a digitação no H1, o H1 DEVE TER APENAS O TEXTO.
-            // O SPAN para highlight deve ser adicionado *depois* da digitação.
-            // Isso tornaria o código JS bem mais complexo.
-
-            // A forma mais direta é deixar o H1 como está no HTML e aplicar a digitação APENAS no parágrafo.
-            // OU: você digita o texto inteiro e depois usa regex ou manipulação de string para envolver o nome com <span>.
-            // A sua imagem mostra que o H1 já tem o <span> no HTML. Então, a melhor abordagem é NÃO FAZER ANIMAÇÃO DE DIGITAÇÃO NO H1.
-            // Deixe o H1 visível imediatamente.
-
-            // === RECOMENDAÇÃO: REMOVA A ANIMAÇÃO DE DIGITAÇÃO DO H1 E DEIXE-O VISÍVEL IMEDIATAMENTE ===
-            // Se você realmente quer a animação no H1 com o highlight,
-            // o H1 precisa ser apenas texto no HTML, e o JS adicionaria a tag <span>.
-            // Por exemplo:
-            // HTML: <h1>Olá, eu sou Paulo Henrique.</h1>
-            // JS: Após digitar "Paulo Henrique", envolver "Paulo Henrique" em <span>
-            // Isso é mais complexo.
-
-            // Pelo que você descreveu ("esta poegando o nome dsa classe"), o JS está quebrando a tag.
-            // A melhor correção é:
-            // 1. Deixe o HTML do H1 como está: `<h1>Olá, eu sou <span class="highlight">Paulo Henrique</span>.</h1>`
-            // 2. Remova o código de "digitação" para `heroHeadline`.
-            // 3. Mantenha ou adicione a digitação apenas para o parágrafo abaixo (`heroContentParagraph`).
-            // 4. Adicione uma animação CSS de `fadeIn` para o `hero-section` para uma aparição suave.
 
             heroHeadline.innerHTML += originalHeadlineText.charAt(headlineIndex);
             headlineIndex++;
@@ -95,19 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Comentar ou remover a linha abaixo se você quer que o H1 apareça imediatamente
-    // heroHeadline.innerHTML = ''; // Limpa o texto original para a digitação
 
-    // Se você NÃO quer a digitação no H1, comente as duas linhas abaixo e descomente a linha do setTimeout
-    // setTimeout(typeWriterHeadline, 1000); // Inicia a digitação do título
-    // NOVO: Apenas digite o parágrafo, o H1 já vem formatado
     heroHeadline.innerHTML = originalHeadlineText; // Restaura o HTML do H1 imediatamente
     setTimeout(typeWriterParagraph, 1000); // Começa a digitar o parágrafo após 1 segundo
     // --- FIM DA CORREÇÃO ---
 
 
-    // ... (código existente para smooth scrolling e validação de formulário) ...
-    // Smooth scrolling para os links de navegação
     document.querySelectorAll('.main-nav a, .btn').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             // Verifica se o href começa com '#' para links internos
@@ -130,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Validação de formulário de contato (exemplo básico)
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault(); // Impede o envio padrão do formulário
 
             const name = contactForm.querySelector('input[name="name"]').value;

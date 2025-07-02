@@ -209,7 +209,7 @@ h1 {
    Se sim, certifique-se de que as cores do text-shadow funcionem bem no fundo claro.
    Ajustei as cores da sombra para serem mais sutis no tema claro. */
 .suspense-title {
-    color: var(--carbon-gray); /* **AJUSTE:** Texto em cinza para se integrar ao tema claro. */
+    color: var(--deep-night-blue); /* **AJUSTE:** Texto em cinza para se integrar ao tema claro. */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.1), /* Sombra mais suave */
                  0 0 10px rgba(0, 0, 0, 0.05), /* Sombra mais suave */
                  0 0 15px var(--deep-night-blue), /* Usando azul de destaque para um "glow" elegante */
@@ -318,7 +318,9 @@ p {
     align-items: center;
     text-align: center;
     /* **AJUSTE:** Use um gradiente de transparência sobre uma imagem mais clara, ou ajuste a imagem de fundo para uma que combine com o tema claro. */
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://images.unsplash.com/photo-1550993051-512140685600?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyMHx8bW9kZXJuJTIwbGFuZHNjYXBlfGVufDB8fHx8MTcxODU4Nzg0N3ww&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover; /* Imagem de fundo mais clara */
+    background-image: url("../images/FUNDO.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 15px;
     box-shadow: 0 10px 30px var(--subtle-shadow);
     margin-bottom: 60px;
