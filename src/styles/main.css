@@ -1,23 +1,26 @@
 :root {
     /* Base Clara e Arejada */
-    --ghost-white: #F8F8F8; 
-    --mist-gray: #EFEFEF;   
+    --ghost-white: #F8F8F8; /* O principal fundo do seu portfólio. Um branco muito suave, quase imperceptível. */
+    --mist-gray: #EFEFEF;   /* Um cinza muito claro para seções secundárias ou cards, dando uma leve distinção sem pesar. */
+
     /* Neutros para Conteúdo */
-    --carbon-gray: #555555; 
-    --deep-black: #2C2C2C;  
+    --carbon-gray: #555555; /* O cinza ideal para o corpo de texto principal, oferecendo excelente legibilidade em fundos claros. */
+    --deep-black: #2C2C2C;  /* Para títulos e destaques que precisam de um contraste forte e impactante, mas sem ser um preto puro. */
 
     /* Acentos Refinados e Expressivos */
-    --deep-night-blue: #07105f; 
-    --dried-blood-red: #DA4453; 
-    --dark-moss-green: #67B47C; 
+    --deep-night-blue: #07105f; /* Um azul vibrante e profissional, perfeito para links, botões de ação e ícones interativos. */
+    --dried-blood-red: #DA4453; /* Um vermelho mais vivo e elegante para alertas, mensagens de erro ou pequenos toques de energia. */
+    --dark-moss-green: #67B47C; /* Um verde suave e natural, ótimo para indicar sucesso, confirmação ou elementos de "novo". */
 
     /* Cores Adicionais para Detalhes Finos */
-    --subtle-shadow: rgba(0, 0, 0, 0.08); 
-    --faint-highlight: rgba(255, 255, 255, 0.7); 
+    --subtle-shadow: rgba(0, 0, 0, 0.08); /* Sombras muito leves para criar profundidade em cards e elementos interativos. */
+    --faint-highlight: rgba(255, 255, 255, 0.7); /* Pequenos brilhos sutis em elementos interativos ou de destaque. */
+
     /* Tipografia e Transições */
-    --font-family-suspense: 'Playfair Display', serif; 
-    --font-family-sans-serif: 'Inter', sans-serif; 
-    --transition-speed-slow: 0.3s ease-out; 
+    --font-family-suspense: 'Playfair Display', serif; /* Mantém uma fonte com serifa elegante para seus títulos. */
+    --font-family-sans-serif: 'Inter', sans-serif; /* Uma sans-serif moderna e de alta legibilidade para o corpo do texto. */
+    --transition-speed-slow: 0.3s ease-out; /* Transições rápidas e suaves para uma experiência fluida. */
+}
 
 /* Reset básico e estilos globais */
 * {
@@ -29,15 +32,15 @@
 body {
     font-family: var(--font-family-sans-serif);
     line-height: 1.6;
-    color: var(--carbon-gray); 
-    background-color: var(--ghost-white); 
+    color: var(--carbon-gray); /* **AJUSTE:** Texto principal em cinza escuro para legibilidade em fundo claro. */
+    background-color: var(--ghost-white); /* **AJUSTE:** Fundo principal em branco suave. */
     display: flex;
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
 }
 
-
+/* Camada de fumaça (mantida, mas com opacidade ajustada para tema claro) */
 .fog {
     position: fixed;
     top: 0;
@@ -46,7 +49,7 @@ body {
     height: 100%;
     background: url('https://i.ibb.co/ZYW3VTp/fog.png') repeat-x;
     background-size: cover;
-    opacity: 0.05; 
+    opacity: 0.05; /* **AJUSTE:** Opacidade muito baixa para ser um detalhe sutil em fundo claro. */
     animation: fogMove 120s linear infinite;
     pointer-events: none;
     z-index: 1;
@@ -70,9 +73,9 @@ body {
 /* Sidebar */
 .sidebar {
     width: 280px;
-    background-color: var(--mist-gray); 
+    background-color: var(--mist-gray); /* **AJUSTE:** Fundo da sidebar em cinza muito claro. */
     padding: 30px 20px;
-    box-shadow: 5px 0 15px var(--subtle-shadow); 
+    box-shadow: 5px 0 15px var(--subtle-shadow); /* Sombra sutil. */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +89,7 @@ body {
     text-align: center;
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 1px solid var(--carbon-gray); 
+    border-bottom: 1px solid var(--carbon-gray); /* **AJUSTE:** Borda sutil em cinza escuro. */
 }
 
 .profile-pic {
@@ -94,32 +97,33 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid var(--deep-night-blue); 
-    box-shadow: 0 0 15px rgba(0, 123, 255, 0.4); 
+    border: 4px solid var(--deep-night-blue); /* **AJUSTE:** Borda da foto em azul vibrante. */
+    margin-bottom: 15px;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.4); /* **AJUSTE:** Sombra azul. */
 }
 
 .profile-card h3 {
-    color: var(--deep-black); 
+    color: var(--deep-black); /* **AJUSTE:** Título do perfil em preto escuro. */
     margin-bottom: 5px;
     font-size: 1.5em;
     font-weight: 600;
 }
 
 .profile-card p {
-    color: var(--carbon-gray); 
+    color: var(--carbon-gray); /* **AJUSTE:** Texto do perfil em cinza escuro. */
     font-size: 0.95em;
     margin-bottom: 15px;
 }
 
 .social-links a {
-    color: var(--carbon-gray); 
+    color: var(--carbon-gray); /* **AJUSTE:** Ícones sociais em cinza escuro. */
     font-size: 1.5em;
     margin: 0 10px;
     transition: color var(--transition-speed-slow);
 }
 
 .social-links a:hover {
-    color: var(--deep-night-blue); 
+    color: var(--deep-night-blue); /* **AJUSTE:** Ícones em azul ao passar o mouse. */
 }
 
 .main-nav ul {
@@ -134,7 +138,7 @@ body {
 .main-nav a {
     display: flex;
     align-items: center;
-    color: var(--carbon-gray); 
+    color: var(--carbon-gray); /* **AJUSTE:** Links da navegação em cinza escuro. */
     text-decoration: none;
     padding: 12px 15px;
     border-radius: 8px;
@@ -149,8 +153,8 @@ body {
 
 .main-nav a:hover,
 .main-nav a.active {
-    background-color: var(--deep-night-blue); 
-    color: var(--ghost-white); 
+    background-color: var(--deep-night-blue); /* **AJUSTE:** Fundo azul ao passar o mouse/ativo. */
+    color: var(--ghost-white); /* **AJUSTE:** Texto branco suave ao passar o mouse/ativo. */
     transform: translateX(5px);
 }
 
@@ -160,13 +164,13 @@ body {
     flex-grow: 1;
     padding: 40px;
     text-align: center;
-    background-color: var(--ghost-white); 
+    background-color: var(--ghost-white); /* **AJUSTE:** Fundo do conteúdo principal em branco suave. */
 }
 
 section {
     padding: 60px 0;
     margin-bottom: 40px;
-    border-bottom: 1px solid var(--mist-gray); 
+    border-bottom: 1px solid var(--mist-gray); /* **AJUSTE:** Borda em cinza muito claro. */
     scroll-margin-top: 80px;
 }
 
@@ -176,7 +180,7 @@ section:last-of-type {
 
 h1,
 h2 {
-    color: var(--deep-black); 
+    color: var(--deep-black); /* **AJUSTE:** Títulos em preto escuro para forte contraste. */
     margin-bottom: 25px;
     text-align: center;
     font-weight: 700;
@@ -190,20 +194,25 @@ h2::after {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: var(--deep-night-blue); 
+    background-color: var(--deep-night-blue); /* **AJUSTE:** Destaque em azul vibrante. */
+    margin: 10px auto 0;
     border-radius: 5px;
 }
 
 h1 {
     font-size: 3.5em;
-    
+    /* Remover a propriedade color comentada aqui, já está definida acima */
 }
 
+/* A classe .suspense-title com seu efeito de fumaça e pulsação foi mantida como estilo especial,
+   mas considere se ela se alinha ao tema 'claro e elegante' para seu portfólio principal.
+   Se sim, certifique-se de que as cores do text-shadow funcionem bem no fundo claro.
+   Ajustei as cores da sombra para serem mais sutis no tema claro. */
 .suspense-title {
-    color: var(--deep-night-blue); 
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 
-                 0 0 10px rgba(0, 0, 0, 0.05), 
-                 0 0 15px var(--deep-night-blue), 
+    color: var(--deep-night-blue); /* **AJUSTE:** Texto em cinza para se integrar ao tema claro. */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1), /* Sombra mais suave */
+                 0 0 10px rgba(0, 0, 0, 0.05), /* Sombra mais suave */
+                 0 0 15px var(--deep-night-blue), /* Usando azul de destaque para um "glow" elegante */
                  0 0 20px var(--deep-night-blue);
     animation: pulse 2s infinite;
 }
@@ -230,11 +239,11 @@ h1 {
 }
 
 .highlight {
-    color: var(--deep-night-blue); 
+    color: var(--deep-night-blue); /* **AJUSTE:** Destaque em azul vibrante. */
 }
 
 p {
-    color: var(--carbon-gray); 
+    color: var(--carbon-gray); /* **AJUSTE:** Parágrafos em cinza escuro. */
     margin-bottom: 15px;
     font-size: 1.05em;
     line-height: 1.8;
@@ -246,7 +255,7 @@ p {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 30px;
-    color: var(--carbon-gray); 
+    color: var(--carbon-gray); /* **AJUSTE:** Texto principal em cinza escuro. */
 }
 
 /* Botões */
@@ -270,26 +279,26 @@ p {
 }
 
 .primary-btn {
-    background-color: var(--deep-night-blue); 
-    color: var(--ghost-white); 
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.25); 
+    background-color: var(--deep-night-blue); /* **AJUSTE:** Botão primário em azul. */
+    color: var(--ghost-white); /* **AJUSTE:** Texto claro. */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.25); /* **AJUSTE:** Sombra azul. */
 }
 
 .primary-btn:hover {
-    background-color: #0069D9;
+    background-color: #0069D9; /* **AJUSTE:** Azul um pouco mais escuro no hover. */
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4); 
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4); /* **AJUSTE:** Sombra azul mais intensa no hover. */
 }
 
 .secondary-btn {
     background-color: transparent;
-    color: var(--deep-night-blue); 
-    border: 2px solid var(--deep-night-blue); 
+    color: var(--deep-night-blue); /* **AJUSTE:** Botão secundário com texto azul. */
+    border: 2px solid var(--deep-night-blue); /* **AJUSTE:** Borda azul. */
 }
 
 .secondary-btn:hover {
-    background-color: var(--deep-night-blue); 
-    color: var(--ghost-white); 
+    background-color: var(--deep-night-blue); /* **AJUSTE:** Fundo azul no hover. */
+    color: var(--ghost-white); /* **AJUSTE:** Texto claro no hover. */
     transform: translateY(-3px);
 }
 
@@ -308,7 +317,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-   
+    /* **AJUSTE:** Use um gradiente de transparência sobre uma imagem mais clara, ou ajuste a imagem de fundo para uma que combine com o tema claro. */
     background-image: url("../images/HTML-Blog-Cover.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -365,7 +374,7 @@ p {
 }
 
 .project-card {
-    background-color: var(--mist-gray); 
+    background-color: var(--mist-gray); /* **AJUSTE:** Fundo do card em cinza muito claro. */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 20px var(--subtle-shadow);
@@ -376,24 +385,25 @@ p {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* **AJUSTE:** Sombra mais intensa no hover para tema claro. */
+}
 
 .project-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-bottom: 1px solid var(--carbon-gray); 
+    border-bottom: 1px solid var(--carbon-gray); /* **AJUSTE:** Borda sutil em cinza escuro. */
 }
 
 .project-card h3 {
-    color: var(--deep-black); 
+    color: var(--deep-black); /* **AJUSTE:** Título do projeto em preto escuro. */
     font-size: 1.4em;
     margin: 20px 20px 10px 20px;
     text-align: left;
 }
 
 .project-card p {
-    color: var(--carbon-gray); 
+    color: var(--carbon-gray); /* **AJUSTE:** Texto do projeto em cinza escuro. */
     font-size: 0.95em;
     margin: 0 20px 20px 20px;
     flex-grow: 1;
@@ -417,8 +427,8 @@ p {
 }
 
 .skill-item {
-    background-color: var(--mist-gray); 
-    color: var(--carbon-gray); 
+    background-color: var(--mist-gray); /* **AJUSTE:** Fundo do item de skill em cinza muito claro. */
+    color: var(--carbon-gray); /* **AJUSTE:** Texto do skill em cinza escuro. */
     padding: 20px 25px;
     border-radius: 10px;
     text-align: center;
@@ -433,19 +443,19 @@ p {
 
 .skill-item:hover {
     transform: translateY(-5px) scale(1.03);
-    background-color: var(--deep-night-blue); 
-    color: var(--ghost-white); 
+    background-color: var(--deep-night-blue); /* **AJUSTE:** Fundo azul no hover. */
+    color: var(--ghost-white); /* **AJUSTE:** Texto claro no hover. */
 }
 
 .skill-item i {
     font-size: 3em;
     margin-bottom: 10px;
-    color: var(--deep-night-blue); 
+    color: var(--deep-night-blue); /* **AJUSTE:** Ícones em azul. */
     transition: color var(--transition-speed-slow);
 }
 
 .skill-item:hover i {
-    color: var(--ghost-white); 
+    color: var(--ghost-white); /* **AJUSTE:** Ícones brancos ao passar o mouse. */
 }
 
 .skill-item span {
@@ -457,7 +467,8 @@ p {
 .contact-form {
     max-width: 600px;
     margin: 40px auto 30px auto;
-    background-color: var(--mist-gray); 
+    background-color: var(--mist-gray); /* **AJUSTE:** Fundo do formulário em cinza muito claro. */
+    padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 20px var(--subtle-shadow);
 }
@@ -469,7 +480,7 @@ p {
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: var(--carbon-gray); 
+    color: var(--carbon-gray); /* **AJUSTE:** Rótulos em cinza escuro. */
     font-weight: 600;
 }
 
@@ -478,10 +489,10 @@ p {
 .contact-form textarea {
     width: 100%;
     padding: 12px 15px;
-    border: 1px solid var(--carbon-gray); 
+    border: 1px solid var(--carbon-gray); /* **AJUSTE:** Borda dos campos em cinza escuro. */
     border-radius: 8px;
-    background-color: var(--ghost-white); 
-    color: var(--deep-black); 
+    background-color: var(--ghost-white); /* **AJUSTE:** Fundo dos campos de entrada em branco suave. */
+    color: var(--deep-black); /* **AJUSTE:** Texto digitado em preto escuro. */
     font-family: var(--font-family-sans-serif);
     font-size: 1em;
     transition: border-color var(--transition-speed-slow), box-shadow var(--transition-speed-slow);
@@ -490,8 +501,8 @@ p {
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
-    border-color: var(--deep-night-blue); 
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); 
+    border-color: var(--deep-night-blue); /* **AJUSTE:** Borda em azul no foco. */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* **AJUSTE:** Sombra azul no foco. */
     outline: none;
 }
 
@@ -509,7 +520,7 @@ p {
 .contact-info {
     text-align: center;
     margin-top: 30px;
-    color: var(--carbon-gray); 
+    color: var(--carbon-gray); /* **AJUSTE:** Texto de contato em cinza escuro. */
 }
 
 .contact-info p {
@@ -521,18 +532,19 @@ p {
 
 .contact-info p i {
     margin-right: 10px;
-    color: var(--deep-night-blue); 
+    color: var(--deep-night-blue); /* **AJUSTE:** Ícones de contato em azul. */
     font-size: 1.2em;
 }
 
 /* Footer */
 .site-footer {
-    background-color: var(--mist-gray); 
-    color: var(--carbon-gray); 
+    background-color: var(--mist-gray); /* **AJUSTE:** Fundo do footer em cinza muito claro. */
+    color: var(--carbon-gray); /* **AJUSTE:** Texto do footer em cinza escuro. */
     text-align: center;
     padding: 25px;
     font-size: 0.9em;
-    border-top: 1px solid var(--carbon-gray); 
+    border-top: 1px solid var(--carbon-gray); /* **AJUSTE:** Borda superior em cinza escuro. */
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -546,16 +558,16 @@ p {
 }
 
 .site-footer .footer-links a {
-    /* **AJUSTE:** Links do footer em cinza escuro. */
+    color: var(--carbon-gray); /* **AJUSTE:** Links do footer em cinza escuro. */
     font-size: 2em;
-    color: black;
     margin: 0 10px;
     transition: color var(--transition-speed-slow);
 }
 
 .site-footer .footer-links a:hover {
-    color: var(--deep-night-blue); 
+    color: var(--deep-night-blue); /* **AJUSTE:** Links do footer em azul ao passar o mouse. */
 }
+
 /* Media Queries para Responsividade (mantidas, sem alterações nas cores) */
 @media (max-width: 992px) {
     .content {
