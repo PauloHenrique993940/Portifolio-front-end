@@ -1,21 +1,20 @@
 /* Variáveis para o tema escuro */
 :root {
-    --bg-color-dark: #1a1a2e; /* Fundo principal escuro */
-    --sidebar-bg-dark: #16213e; /* Fundo da barra lateral escuro */
-    --text-color-dark: #e0e0e0; /* Cor do texto claro */
-    --heading-color-dark: #e94560; /* Cor dos títulos diferente */
-    --link-hover-dark: #0f3460; /* Cor do link ao passar o mouse */
-    --button-primary-bg-dark: #e94560; /* Cor de fundo do botão primário */
-    --button-primary-text-dark: #ffffff; /* Cor do texto do botão primário */
-    --button-secondary-bg-dark: #0f3460; /* Cor de fundo do botão secundário */
-    --button-secondary-text-dark: #e0e0e0; /* Cor do texto do botão secundário */
-    --card-bg-dark: #262c4a; /* Fundo de cards/seções escuro */
-    --border-color-dark: #0f3460; /* Cor da borda */
+    --bg-color-dark: #1a1a2e; 
+    --sidebar-bg-dark: #16213e; 
+    --text-color-dark: #e0e0e0; 
+    --heading-color-dark: #e94560; 
+    --link-hover-dark: #0f3460; 
+    --button-primary-bg-dark: #e94560; 
+    --button-primary-text-dark: #ffffff; 
+    --button-secondary-bg-dark: #0f3460; 
+    --button-secondary-text-dark: #e0e0e0; 
+    --card-bg-dark: #262c4a; 
+    --border-color-dark: #0f3460; 
 }
 
 /* Aplicar estilos do tema escuro */
 body.dark-theme {
-    background-color: var(--bg-color-dark);
     color: var(--text-color-dark);
 }
 
@@ -30,7 +29,7 @@ body.dark-theme h3 {
 }
 
 body.dark-theme .highlight {
-    color: var(--heading-color-dark); /* Manter a cor de destaque no tema escuro */
+    color: var(--heading-color-dark); 
 }
 
 body.dark-theme .main-nav ul li a {
@@ -49,8 +48,7 @@ body.dark-theme .btn.primary-btn {
 }
 
 body.dark-theme .btn.primary-btn:hover {
-    background-color: var(--bg-color-dark); /* Exemplo de escurecimento */
-}
+    background-color: var(--bg-color-dark); 
 
 body.dark-theme .btn.secondary-btn {
     background-color: var(--button-secondary-bg-dark);
@@ -59,23 +57,22 @@ body.dark-theme .btn.secondary-btn {
 }
 
 body.dark-theme .btn.secondary-btn:hover {
-    background-color: var(--bg-color-dark); /* Exemplo de escurecimento */
+    background-color: var(--bg-color-dark); 
 }
-.hero-section{
-    background-color: var(--sidebar-bg-dark);
-}
+
 body.dark-theme .project-card,
-body.dark-theme .skill-item,
 body.dark-theme .contact-form,
 body.dark-theme .contact-info {
-    background-color: var(--card-bg-dark);
+    background-color: var(--button-primary-text-dark);
     border-color: var(--border-color-dark);
     color: var(--text-color-dark);
 }
-
+.contact-info{
+    padding: 10px;
+}
 body.dark-theme .contact-form input,
 body.dark-theme .contact-form textarea {
-    background-color: var(--sidebar-bg-dark);
+    background-color: var(--button-primary-text-dark);
     color: var(--text-color-dark);
     border-color: var(--border-color-dark);
 }
@@ -86,13 +83,14 @@ body.dark-theme .contact-form textarea::placeholder {
 }
 
 body.dark-theme .site-footer {
-    background-color: var(--sidebar-bg-dark);
+    background-color: var(--button-primary-text-dark);
     color: var(--text-color-dark);
+    border: 1px solid var(--bg-color-dark);
 }
 
 body.dark-theme .social-links a,
 body.dark-theme .footer-links a {
-    color: var(--text-color-dark);
+    color: var(--bg-color-dark);
 }
 
 body.dark-theme .social-links a:hover,
@@ -104,4 +102,5 @@ body.dark-theme .footer-links a:hover {
 body.dark-theme .theme-switcher #theme-toggle {
     background-color: var(--button-primary-bg-dark);
     color: var(--button-primary-text-dark);
+
 }
