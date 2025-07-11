@@ -201,15 +201,11 @@ h2::after {
 
 h1 {
     font-size: 3.5em;
-    /* Remover a propriedade color comentada aqui, já está definida acima */
+    
 }
 
-/* A classe .suspense-title com seu efeito de fumaça e pulsação foi mantida como estilo especial,
-   mas considere se ela se alinha ao tema 'claro e elegante' para seu portfólio principal.
-   Se sim, certifique-se de que as cores do text-shadow funcionem bem no fundo claro.
-   Ajustei as cores da sombra para serem mais sutis no tema claro. */
 .suspense-title {
-    color: var(--deep-night-blue); /* **AJUSTE:** Texto em cinza para se integrar ao tema claro. */
+    color: #F8F8F8; /* **AJUSTE:** Texto em cinza para se integrar ao tema claro. */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.1), /* Sombra mais suave */
                  0 0 10px rgba(0, 0, 0, 0.05), /* Sombra mais suave */
                  0 0 15px var(--deep-night-blue), /* Usando azul de destaque para um "glow" elegante */
@@ -318,7 +314,8 @@ p {
     align-items: center;
     text-align: center;
     /* **AJUSTE:** Use um gradiente de transparência sobre uma imagem mais clara, ou ajuste a imagem de fundo para uma que combine com o tema claro. */
-    background-image: url("../images/HTML-Blog-Cover.png");
+    background-color: #000;
+    color: #ccc;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
